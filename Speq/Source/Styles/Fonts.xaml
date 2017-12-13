@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Speq.Source">
+    <!-- Define different font families -->
+    <FontFamily x:Key="AdventProThin">pack://application;,,,/Resources/Fonts/#Advent Pro Thin</FontFamily>
+    <FontFamily x:Key="AdventProRegular">pack://application;,,,/Resources/Fonts/#Advent Pro Regular</FontFamily>
+    <FontFamily x:Key="AdventProMedium">pack://application;,,,/Resources/Fonts/#Advent Pro Medium</FontFamily>
+    <FontFamily x:Key="AdventProBold">pack://application;,,,/Resources/Fonts/#Advent Pro Bold</FontFamily>
+    <FontFamily x:Key="AdventProSemiBold">pack://application;,,,/Resources/Fonts/#Advent Pro SemiBold</FontFamily>
+    <FontFamily x:Key="AdventProLight">pack://application;,,,/Resources/Fonts/#Advent Pro Light</FontFamily>
+    <FontFamily x:Key="AdventProExtraLight">pack://application;,,,/Resources/Fonts/#Advent Pro ExtraLight</FontFamily>
+    
+    <!-- Create base application style that targets every control -->
+    <Style x:Key="SpeqBaseStyle" TargetType="{x:Type Control}">
+        <Setter Property="FontFamily" Value="{StaticResource AdventProRegular}"/>
+    </Style>
+
+    <Style x:Key="SpeqBaseTextBlockStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily" Value="{StaticResource AdventProRegular}"/>
+    </Style>
+
+    <!-- Apply 'SpeqBaseStyle' to specific controls -->
+    <Style TargetType="{x:Type Button}"     BasedOn="{StaticResource SpeqBaseStyle}"/>
+    <Style TargetType="{x:Type Label}"      BasedOn="{StaticResource SpeqBaseStyle}"/>
+    <Style TargetType="{x:Type TextBlock}"  BasedOn="{StaticResource SpeqBaseTextBlockStyle}"/>
+    <Style TargetType="{x:Type TextBox}"    BasedOn="{StaticResource SpeqBaseStyle}"/>
+    <Style TargetType="{x:Type ListView}"   BasedOn="{StaticResource SpeqBaseStyle}"/>
+</ResourceDictionary>

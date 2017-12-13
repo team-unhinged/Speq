@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Speq.Source">
+    <!-- Background Colors and Brushes -->
+    <Color x:Key="BackgroundPrimary">#37464f</Color>
+    <SolidColorBrush x:Key="BackgroundPrimaryBrush" Color="{StaticResource BackgroundPrimary}"/>
+
+    <Color x:Key="BackgroundPrimaryDark">#101f27</Color>
+    <SolidColorBrush x:Key="BackgroundPrimaryDarkBrush" Color="{StaticResource BackgroundPrimaryDark}"/>
+
+    <Color x:Key="BackgroundPrimaryLight">#62717b</Color>
+    <SolidColorBrush x:Key="BackgroundPrimaryLightBrush" Color="{StaticResource BackgroundPrimaryLight}"/>
+
+    <Color x:Key="BackgroundSecondary">#f57c00</Color>
+    <SolidColorBrush x:Key="BackgroundSecondaryBrush" Color="{StaticResource BackgroundSecondary}"/>
+
+    <Color x:Key="BackgroundSecondaryDark">#bb4d00</Color>
+    <SolidColorBrush x:Key="BackgroundSecondaryDarkBrush" Color="{StaticResource BackgroundSecondaryDark}"/>
+
+    <Color x:Key="BackgroundSecondaryLight">#ffad42</Color>
+    <SolidColorBrush x:Key="BackgroundSecondaryLightBrush" Color="{StaticResource BackgroundSecondaryLight}"/>
+    
+    <!-- Foreground Colors and Brushes -->
+    <Color x:Key="ForegroundPrimary">#ffffff</Color>
+    <SolidColorBrush x:Key="ForegroundPrimaryBrush" Color="{StaticResource ForegroundPrimary}"/>
+
+    <Color x:Key="ForegroundSecondary">#000000</Color>
+    <SolidColorBrush x:Key="ForegroundSecondaryBrush" Color="{StaticResource ForegroundSecondary}"/>
+
+    <SolidColorBrush x:Key="ForegroundSecondaryDark" Color="{StaticResource ForegroundPrimary}"/>
+</ResourceDictionary>
