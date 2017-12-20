@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Speq.Source.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace Speq.Source {
     public partial class MainWindow : Window {
         public MainWindow () {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }

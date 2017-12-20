@@ -22,7 +22,8 @@
     <!-- Apply 'SpeqBaseStyle' to specific controls -->
     <Style TargetType="{x:Type Button}"     BasedOn="{StaticResource SpeqBaseStyle}"/>
     <Style TargetType="{x:Type Label}"      BasedOn="{StaticResource SpeqBaseStyle}"/>
-    <Style TargetType="{x:Type TextBlock}"  BasedOn="{StaticResource SpeqBaseTextBlockStyle}"/>
     <Style TargetType="{x:Type TextBox}"    BasedOn="{StaticResource SpeqBaseStyle}"/>
     <Style TargetType="{x:Type ListView}"   BasedOn="{StaticResource SpeqBaseStyle}"/>
+    <Style TargetType="{x:Type TabControl}" BasedOn="{StaticResource SpeqBaseStyle}"/>
+    <Style TargetType="{x:Type TextBlock}"  BasedOn="{StaticResource SpeqBaseTextBlockStyle}"/>
 </ResourceDictionary>

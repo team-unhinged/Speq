@@ -9,7 +9,9 @@
         Title="Speq" 
         MinHeight="480" MinWidth="640"
         Height="480" Width="640">
-    <Grid>
-        <Frame />
-    </Grid>
+    <Border>
+        <Grid>
+            <TabControl ItemsSource="{Binding SpeqTabs}"/>
+        </Grid>
+    </Border>
 </Window>

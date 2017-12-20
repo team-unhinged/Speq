@@ -58,9 +58,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Source\ViewModels\Core\ViewModel.cs" />
-    <Compile Include="Source\Views\SpeqView.xaml.cs">
-      <DependentUpon>SpeqView.xaml</DependentUpon>
+    <Compile Include="Source\ViewModels\CPUTabViewModel.cs" />
+    <Compile Include="Source\ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="Source\Views\CPUTab.xaml.cs">
+      <DependentUpon>CPUTab.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Source\Views\Tab.cs" />
     <Page Include="Source\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -73,7 +76,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Source\Views\SpeqView.xaml">
+    <Page Include="Source\Styles\Text.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -82,6 +85,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Source\Styles\Fonts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\Views\CPUTab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

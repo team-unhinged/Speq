@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Speq.Source.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,16 +14,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Speq.Source
-{
+namespace Speq.Source.Views {
     /// <summary>
-    /// Interaction logic for SpeqView.xaml
+    /// Interaction logic for CPUTab.xaml
     /// </summary>
-    public partial class SpeqView : Page
-    {
-        public SpeqView()
-        {
+    public partial class CPUTab : Tab {
+        public CPUTab () {
             InitializeComponent();
+            DataContext = new CPUTabViewModel();
         }
     }
 }
