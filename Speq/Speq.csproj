@@ -59,9 +59,29 @@
     </ApplicationDefinition>
     <Compile Include="Source\ViewModels\Core\ViewModel.cs" />
     <Compile Include="Source\ViewModels\CPUTabViewModel.cs" />
+    <Compile Include="Source\ViewModels\DashboardTabViewModel.cs" />
+    <Compile Include="Source\ViewModels\DevicesTabViewModel.cs" />
+    <Compile Include="Source\ViewModels\DisksTabViewModel.cs" />
+    <Compile Include="Source\ViewModels\GPUTabViewModel.cs" />
     <Compile Include="Source\ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="Source\ViewModels\MemoryTabViewModel.cs" />
     <Compile Include="Source\Views\CPUTab.xaml.cs">
       <DependentUpon>CPUTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Views\DashboardTab.xaml.cs">
+      <DependentUpon>DashboardTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Views\DevicesTab.xaml.cs">
+      <DependentUpon>DevicesTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Views\DisksTab.xaml.cs">
+      <DependentUpon>DisksTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Views\GPUTab.xaml.cs">
+      <DependentUpon>GPUTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Views\MemoryTab.xaml.cs">
+      <DependentUpon>MemoryTab.xaml</DependentUpon>
     </Compile>
     <Compile Include="Source\Views\Tab.cs" />
     <Page Include="Source\MainWindow.xaml">
@@ -89,6 +109,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Source\Views\CPUTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\Views\DashboardTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\Views\DevicesTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\Views\DisksTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\Views\GPUTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\Views\MemoryTab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

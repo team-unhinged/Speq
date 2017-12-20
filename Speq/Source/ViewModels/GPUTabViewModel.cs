@@ -1,6 +1,6 @@
 ﻿using Speq.Source.ViewModels.Core;
 
 namespace Speq.Source.ViewModels {
-    public class CPUTabViewModel : ViewModel {
+    public class GPUTabViewModel : ViewModel {
     }
 }

@@ -15,7 +15,12 @@ namespace Speq.Source.ViewModels {
         
         public MainWindowViewModel () {
             SpeqTabs = new ObservableCollection<TabItem> {
-                new TabItem() { Header = "CPU", Content = new CPUTab() }
+                new TabItem() { Header = "Dashboard", Content = new DashboardTab() },
+                new TabItem() { Header = "CPU", Content = new CPUTab() },
+                new TabItem() { Header = "GPU", Content = new GPUTab() },
+                new TabItem() { Header = "Disks", Content = new DisksTab() },
+                new TabItem() { Header = "Memory", Content = new MemoryTab() },
+                new TabItem() { Header = "Devices", Content = new DevicesTab() }
             };
         }
     }
