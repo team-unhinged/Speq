@@ -5,9 +5,8 @@ namespace Speq.Source.Views {
     /// Interaction logic for DashboardTab.xaml
     /// </summary>
     public partial class DashboardTab : Tab {
-        public DashboardTab () {
+        public DashboardTab () : base( new DevicesTabViewModel() ) {
             InitializeComponent();
-            DataContext = new DashboardTabViewModel();
         }
     }
 }

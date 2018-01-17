@@ -5,9 +5,8 @@ namespace Speq.Source.Views {
     /// Interaction logic for MemoryTab.xaml
     /// </summary>
     public partial class MemoryTab : Tab {
-        public MemoryTab () {
+        public MemoryTab () : base( new MemoryTabViewModel() ) {
             InitializeComponent();
-            DataContext = new MemoryTabViewModel();
         }
     }
 }

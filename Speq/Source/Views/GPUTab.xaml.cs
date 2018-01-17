@@ -5,9 +5,8 @@ namespace Speq.Source.Views {
     /// Interaction logic for GPUTab.xaml
     /// </summary>
     public partial class GPUTab : Tab {
-        public GPUTab () {
+        public GPUTab () : base( new GPUTabViewModel() ) {
             InitializeComponent();
-            DataContext = new GPUTabViewModel();
         }
     }
 }

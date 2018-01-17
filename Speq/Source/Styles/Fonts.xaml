@@ -13,10 +13,12 @@
     <!-- Create base application style that targets every control -->
     <Style x:Key="SpeqBaseStyle" TargetType="{x:Type Control}">
         <Setter Property="FontFamily" Value="{StaticResource AdventProRegular}"/>
+        <Setter Property="FontSize" Value="14"/>
     </Style>
 
     <Style x:Key="SpeqBaseTextBlockStyle" TargetType="{x:Type TextBlock}">
         <Setter Property="FontFamily" Value="{StaticResource AdventProRegular}"/>
+        <Setter Property="FontSize" Value="14"/>
     </Style>
 
     <!-- Apply 'SpeqBaseStyle' to specific controls -->

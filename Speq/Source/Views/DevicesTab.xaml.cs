@@ -5,9 +5,8 @@ namespace Speq.Source.Views {
     /// Interaction logic for DevicesTab.xaml
     /// </summary>
     public partial class DevicesTab : Tab {
-        public DevicesTab () {
+        public DevicesTab () : base( new DevicesTabViewModel() ) {
             InitializeComponent();
-            DataContext = new DevicesTabViewModel();
         }
     }
 }

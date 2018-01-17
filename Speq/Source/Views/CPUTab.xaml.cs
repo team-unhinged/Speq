@@ -19,9 +19,8 @@ namespace Speq.Source.Views {
     /// Interaction logic for CPUTab.xaml
     /// </summary>
     public partial class CPUTab : Tab {
-        public CPUTab () {
+        public CPUTab () : base( new CPUTabViewModel() ) {
             InitializeComponent();
-            DataContext = new CPUTabViewModel();
         }
     }
 }

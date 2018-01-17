@@ -5,9 +5,8 @@ namespace Speq.Source.Views {
     /// Interaction logic for DisksTab.xaml
     /// </summary>
     public partial class DisksTab : Tab {
-        public DisksTab () {
+        public DisksTab () : base( new DisksTabViewModel() ) {
             InitializeComponent();
-            DataContext = new DisksTabViewModel();
         }
     }
 }

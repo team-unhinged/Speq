@@ -39,6 +39,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -57,6 +58,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Source\Models\CPU.cs" />
+    <Compile Include="Source\ViewModels\Core\RelayCommand.cs" />
     <Compile Include="Source\ViewModels\Core\ViewModel.cs" />
     <Compile Include="Source\ViewModels\CPUTabViewModel.cs" />
     <Compile Include="Source\ViewModels\DashboardTabViewModel.cs" />
@@ -166,9 +169,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Source\Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Resources\Images\Logo\icon.ico" />
   </ItemGroup>

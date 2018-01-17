@@ -9,9 +9,11 @@
         Title="Speq" 
         MinHeight="480" MinWidth="640"
         Height="480" Width="640">
-    <Border>
+    <Border Background="{StaticResource BackgroundPrimaryBrush}">
         <Grid>
-            <TabControl ItemsSource="{Binding SpeqTabs}"/>
+            <!-- Have the Dashboard Tab selected by default (SelectedIndex = 0) -->
+            <TabControl ItemsSource="{Binding SpeqTabs}"
+                        SelectedIndex="0"/>
         </Grid>
     </Border>
 </Window>
